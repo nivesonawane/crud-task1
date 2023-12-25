@@ -1,0 +1,33 @@
+body{
+    background-image: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url('../img/lights.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.ourPlaces{
+    width: 60%;
+    position: fixed;
+    left: 20%;
+    top: 20vh;
+    display: none;
+    animation: fade-in-slide .4s ease-in-out;
+}
+
+.ourPlaces.visible{
+    display: block;
+}
+
+.card{
+    background-color: #FFCC00;
+}
+
+@keyframes fade-in-slide{
+    0%{
+        margin-top: -60%;
+        opacity: 0;
+    }
+    100%{
+        margin-top: 0;
+        opacity: 1;
+    }
+}
